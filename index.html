@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaitanya Ghadage | Digital Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(-45deg, #0a0a0a, #0f1a25, #0a0a0a);
+      background-size: 600% 600%;
+      animation: gradientShift 30s ease infinite;
+      color: #f2f2f2;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #fff; }
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1 { font-size: 4rem; font-weight: 800; margin-bottom: 10px; }
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      color: #aaa;
+    }
+    section {
+      padding: 100px 20px 60px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+    }
+    .project-card, .certificate-card {
+      background: #111;
+      padding: 20px;
+      margin-bottom: 25px;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover, .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    .project-card h3, .certificate-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #f2f2f2;
+    }
+    .project-card p, .certificate-card p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .project-card a, .certificate-card a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .certificate-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .socials { text-align: center; margin-top: 20px; }
+    .socials a {
+      margin: 0 12px;
+      color: #aaa;
+      font-size: 1.6rem;
+      transition: color 0.3s;
+    }
+    .socials a:hover { color: #00bfff; }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Chaitanya Ghadage</h1>
+    <p>Digital Creator • Frontend Developer (Backend Not Available Because Still Learning) • Problem Solver • Basic Video & Photo Editing • Basic Github Developer • Full Html & React Native Website Ui Designer • Certified Developer By Whitehat JR </p>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hi, I'm Chaitanya Ghadage, A creative developer passionate about building elegant, performant websites. I focus on clean code, thoughtful design, and user-first experiences.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+<div class="project-card">
+  <h3>Web Data Extraction Project</h3>
+  <p>A web scraper built using Python and Flask to extract product data from Amazon, process it, and display the results via a clean web interface.</p>
+  <a href="https://github.com/Chaitan3010k/PRO-C128-WEB-DATA-EXTRACTION---2" target="_blank">View on GitHub</a>
+</div>
+    <div class="project-card">
+  <h3>WhatsApp Automation Bot</h3>
+  <p>A Python-based automation bot using pywhatkit to send scheduled WhatsApp messages via the web.  
+  <br><strong>Note:</strong> This project hasn't been updated in a while and may not work as expected. Updates will be made soon. For reference only.</p>
+  <a href="https://github.com/Chaitan3010k/whats_bot" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>WhatsApp Turbo GPT</h3>
+  <p>A proof-of-concept chatbot that integrates OpenAI's GPT API with WhatsApp using Twilio and Flask for smart AI responses via WhatsApp.  
+  <br><strong>Note:</strong> This project is not actively maintained and may not work currently. Updates will be made soon. Shared for reference purposes only.</p>
+  <a href="https://github.com/Chaitan3010k/whatsapp-turbo-gpt" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Product Reviews Analysis</h3>
+  <p>A sentiment analysis project using Python and Natural Language Processing (NLP) to analyze Amazon product reviews and classify them as positive or negative.</p>
+  <a href="https://github.com/Chaitan3010k/PRO-C115-PRODUCT-REVIEWS-ANALYSIS" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Like & Dislike Gesture Recognition</h3>
+  <p>A computer vision project using Python and OpenCV to detect hand gestures for "like" and "dislike" using a webcam feed. It processes frames in real-time to identify thumb positions and gestures.</p>
+  <a href="https://github.com/Chaitan3010k/PRO-C108-LIKE-AND-DISLIKE-GESTURES" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Take Screenshot Tool</h3>
+  <p>A simple Python desktop tool using Tkinter and PIL that allows users to capture and save screenshots with a custom GUI interface. Ideal for quick screen captures.</p>
+  <a href="https://github.com/Chaitan3010k/Take-ScreenShot" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Pedestrian Detection</h3>
+  <p>A real-time computer vision project using Python and OpenCV to detect pedestrians in video streams with Haar Cascade classifiers. Designed to enhance safety and surveillance systems.</p>
+  <a href="https://github.com/Chaitan3010k/PRO-C106-DETECT-THE-PEDESTRIAN" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Automated File Segregation</h3>
+  <p>A Python script that organizes files in a directory by automatically sorting them into folders based on file type (e.g., images, documents, videos). Useful for cleaning up messy downloads.</p>
+  <a href="https://github.com/Chaitan3010k/AUTOMATE-FILE-SEGREGATION" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Automated File Segregation</h3>
+  <p>A Python automation tool that scans a directory and neatly organizes files into categorized folders based on their extensions (e.g., .jpg, .pdf, .mp4). Saves time and keeps folders clean.</p>
+  <a href="https://github.com/Chaitan3010k/AUTOMATE-FILE-SEGREGATION" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>CoronaDash – COVID-19 Dashboard</h3>
+  <p>A Python-based interactive dashboard using Plotly and Dash to visualize real-time COVID-19 data, including cases, recoveries, and deaths by country and date range.</p>
+  <a href="https://github.com/Chaitan3010k/CORONADASH" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Spectagram – Stage 9</h3>
+  <p>A React Native mobile app that lets users view and interact with a feed of stories. Features include navigation, user authentication, and styled UI components — part of a multi-stage Instagram-like app development series.</p>
+  <a href="https://github.com/Chaitan3010k/Spectagram-Stage-9" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Story Telling App</h3>
+  <p>A React Native app that allows users to write, view, and share creative stories. Features include a beautiful UI, navigation between screens, and basic user interaction. Great for practicing mobile app development fundamentals.</p>
+  <a href="https://github.com/Chaitan3010k/StoryTellingApp-2" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>ISS Tracker</h3>
+  <p>A React Native app that tracks the real-time location of the International Space Station (ISS) using live data from a public API. Includes map integration and updates ISS coordinates dynamically for space enthusiasts.</p>
+  <a href="https://github.com/Chaitan3010k/Iss-Tracker" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Stellar App – Stage Project</h3>
+  <p>A React Native app that helps users explore planets and stars. It features interactive navigation, fun facts about celestial bodies, and basic UI/UX design as part of a beginner-friendly mobile development series.</p>
+  <a href="https://github.com/Chaitan3010k/STELLAR-STAGE" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>AR Cut-Paste</h3>
+  <p>An augmented reality prototype that captures objects from the real world using a mobile camera and pastes them directly into desktop applications. Inspired by experimental computer vision + AR workflows.</p>
+  <a href="https://github.com/Chaitan3010k/ar-cutpaste" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Chaitanya Learning – CBSE Portal</h3>
+  <p>A web platform for CBSE students offering structured learning materials, subject-wise notes, and a clean responsive design. Built with HTML, CSS, and JavaScript to support self-paced study.</p>
+  <a href="https://github.com/Chaitan3010k/chaitanyalearningcbse" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Newton's Cradle Simulation</h3>
+  <p>A physics simulation built with JavaScript and Matter.js that demonstrates the conservation of momentum and energy using a virtual Newton’s Cradle. Great for visualizing physics concepts interactively.</p>
+  <a href="https://github.com/Chaitan3010k/NEWTONcradle" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Chocolate Cake Recipe Website</h3>
+  <p>A simple and beautifully designed HTML & CSS website that showcases a step-by-step chocolate cake recipe. Perfect for beginners learning web development and layout styling.</p>
+  <a href="https://github.com/Chaitan3010k/chocolate-cake-recipe" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Touching Function – Collision Detection</h3>
+  <p>A basic JavaScript project that detects collision between two objects using the "isTouching" function. Built with p5.js to help beginners understand object interaction and 2D collision logic.</p>
+  <a href="https://github.com/Chaitan3010k/touching-function-by-chaitanya" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Chrome T-Rex Game Clone</h3>
+  <p>A fun JavaScript-based clone of the classic offline Chrome T-Rex runner game. Built using p5.js, featuring jumping obstacles, score tracking, and basic collision detection for endless gameplay.</p>
+  <a href="https://github.com/Chaitan3010k/trex-game-by-chaitanya" target="_blank">View on GitHub</a>
+</div>
+<div class="project-card">
+  <h3>Monkey Jungle Runner Game</h3>
+  <p>An endless runner game built with p5.js, where a monkey jumps over obstacles and collects bananas. Features include increasing speed, score tracking, and simple collision logic for game over.</p>
+  <a href="https://github.com/Chaitan3010k/trex-game-by-chaitany" target="_blank">View on GitHub</a>
+</div>
+<p style="margin-top: 2rem; font-style: italic; text-align: center; color: #555;">
+  All these projects were created by me during the course of WhiteHat Jr.
+</p>
+
+  </section>
+
+  <section id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="certificate-card"><h3>Digital Marketing Business Online For Social Media</h3><p>Issued by Udemy • </p><img src="certificate1.png" alt="Social Media Certificate"></div>
+    <div class="certificate-card"><h3>HTML 5,Python,Flask Framework All In One Complete Course</h3><p>Issued by Udemy •</p><img src="certificate2.png" alt="HTML 5,Python,Flask Framework Certificate"></div>
+    <div class="certificate-card"><h3>Java And C++ And PHP</h3><p>Issued by Udemy • </p><img src="certificate3.png" alt="Java And C++ And PHP Certificate"></div>
+    <div class="certificate-card"><h3>Certified App Developer</h3><p>Issued by WhitehatJr • </p><img src="certificate4.png" alt="Certified App Developer Certificate"></div>
+    <div class="certificate-card"><h3>Certified Game Developer</h3><p>Issued by WhitehatJr • </p><img src="certificate5.jpeg" alt="Certified Game Developer Certificate"></div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email me at: <a href="mailto:ghadage.chaitanya7526@gmail.com">ghadage.chaitanya7526@gmail.com</a></p>
+    <div class="socials">
+      <a href="https://instagram.com/chaitanya_ghadage_" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/chaitan3010k" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name • Built with 💻 and ☕by Chaitanya Ghadage
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#00bfff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00bfff",
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
